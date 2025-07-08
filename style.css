@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 330px;
+    height: 450px;
+    margin-left: 35%;
+    margin-top: 8%;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 0 7px 2px rgb(149, 148, 148);
+}
+.number{
+    width: 260px;
+    height: 50px;
+    margin-top: 8%;
+    padding-left: 45%;
+    font-size: 23px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: rgb(20, 111, 238);
+    box-shadow: 0 0 1px 2px rgb(37, 101, 239);
+}
+.percent{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(56, 55, 55);
+    background-color: rgb(251, 249, 244);
+    box-shadow: 0 0 2px 2px rgb(231, 229, 229);
+}    
+.root{
+    width: 55px;
+    height: 54px;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(56, 55, 55);
+    background-color: rgb(251, 249, 244);
+    box-shadow: 0 0 2px 2px rgb(227, 224, 224);
+}
+.back{
+    width: 55px;
+    height: 54px;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(56, 55, 55);
+    background-color: rgb(251, 249, 244);
+    box-shadow: 0 0 2px 2px rgb(225, 223, 223);
+}
+.delete{
+    width: 55px;
+    height: 54px;
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 22px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0 0 2px 2px rgb(226, 224, 224);
+}
+.navbar_two{
+    margin-top: 2%;
+}
+.num_seven{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_eight{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_nine{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.minus{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 34, 0);
+    box-shadow: 0 0 2px 2px rgb(219, 18, 18);
+}
+.navbar_three{
+    margin-top: 2%;
+}
+.num_four{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_five{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_six{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.division{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 111, 238);
+    box-shadow: 0 0 2px 2px rgb(12, 88, 182);
+}
+.navbar_four{
+    margin-top: 2%;
+}
+.num_one{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_two{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_three{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.multiply{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 255, 0);
+    box-shadow: 0 0 2px 2px rgb(207, 191, 6);
+}
+.navbar_five{
+    margin-top: 2%;
+}
+.dot{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.num_zero{
+    width: 55px;
+    height: 54px;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(192, 191, 190);
+    box-shadow: 0 0 2px 2px rgb(149, 147, 147);
+}
+.equal{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 27px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(45, 44, 44);
+    background-color: rgb(243, 238, 233);
+    box-shadow: 0 0 2px 2px rgb(222, 219, 219);
+}
+.plus{
+    width: 55px;
+    height: 54px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(34, 255, 0);
+    box-shadow: 0 0 2px 2px rgb(43, 153, 12);
+}
