@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  margin-top: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.mir {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.key {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.car {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.work {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.dog {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.arm {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.phone {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.busin {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.roba {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.ball {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.scale {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.exch {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.cottage {
+  flex-direction: column;
+  padding: 40px;
+  text-align: center;
+}
+
+.header2 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 15%;
+}
+
+.section2 {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 60px;
+  background-color: #f2f4f5;
+}
+
+.item {
+  text-align: left;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.byd {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item1 {
+  text-align: left;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.klav {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item2 {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.tv {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item3 {
+  text-align: left;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.lap {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item4 {
+  text-align: left;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.iphone {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item5 {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.watch {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item6 {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.bag {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item7 {
+  text-align: center;
+  font-size: 20px;
+  padding: 25px;
+  background-color: white;
+}
+
+.air {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
