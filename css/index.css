@@ -1,0 +1,259 @@
+@font-face {
+  font-family: Philosopher;
+  src: url("../fonts/Philosopher-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* Global css */
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn {
+  padding: 13px 30px;
+  border-radius: 5px;
+  border: 1px solid #dc780b;
+  background: #dc780b;
+  color: white;
+}
+.btn:hover {
+  background: white;
+  color: #dc780b;
+  cursor: pointer;
+}
+
+.sub-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #dc780b;
+  letter-spacing: 2px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 7px;
+  font-size: 32px;
+  font-family: Philosopher;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  height: 106px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.navbar__collection {
+  display: flex;
+  list-style: none;
+  gap: 41px;
+  flex: 1;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #150c01;
+}
+.navbar__link:hover {
+  color: #dc780b;
+}
+
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero__image {
+  width: 53%;
+}
+
+.hero__context {
+  width: 45%;
+}
+
+.hero__title {
+  font-size: 45px;
+  font-family: Philosopher;
+  font-weight: 500;
+}
+
+.hero__desc {
+  color: rgb(92, 78, 85);
+  margin: 42px 0 50px;
+}
+
+.hero__options {
+  display: flex;
+  gap: 30px;
+}
+
+.features {
+  margin-top: 106px;
+}
+
+.features__wrapper {
+  display: flex;
+  margin-top: 44px;
+  justify-content: space-around;
+}
+
+.features__card {
+  width: 300px;
+  height: 228px;
+  text-align: center;
+}
+
+.features__card h3 {
+  margin: 33px 0 15px;
+  font-size: 25px;
+}
+
+.features__card p {
+  color: rgb(92, 78, 85);
+}
+
+.aboutUs__wrapper {
+  display: flex;
+  margin-top: 125px;
+}
+
+.aboutUs__desc {
+  width: 50%;
+  height: 100%;
+  margin-top: 80px;
+  margin-left: 110px;
+}
+
+.aboutUs__sub__title {
+  text-transform: uppercase;
+  color: #dc780b;
+  letter-spacing: 2px;
+}
+
+.aboutUs__title {
+  margin: 14px 0 20px;
+  font-size: 35px;
+  font-family: Philosopher;
+  font-weight: 500;
+}
+
+.aboutUs__title__desc {
+  margin: 0 0 35px;
+  color: rgb(92, 78, 85);
+}
+
+.menu__wrapper {
+  margin-top: 83px;
+}
+
+.menu__title {
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: Philosopher;
+  font-weight: 500;
+  text-align: center;
+}
+
+.menu__desc {
+  margin-top: 25px;
+  color: rgb(92, 78, 85);
+  text-align: center;
+}
+
+.menu__foods {
+  width: 1140px;
+  height: 922px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu__food {
+  width: 360px;
+  border: rgb(230, 230, 230);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 80px 9px 0 0;
+}
+
+.food__img {
+  border-radius: 80px 9px 80px 0;
+}
+
+.menu__food__titlePrice {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+
+.menu__food__title {
+  margin-left: 8px;
+  font-family: Philosopher;
+  font-weight: 500;
+}
+
+.menu__food__price {
+  margin-right: 5px;
+  font-family: Philosopher;
+  font-weight: 500;
+}
+
+.menu__food__desc {
+  margin-top: 16px;
+  margin-left: 28px;
+  color: rgb(92, 78, 85);
+}
+
+.menu__food__cart__rating {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 19px;
+  align-items: center;
+}
+
+.menu__food__addCart {
+  width: 36px;
+  height: 34px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #dc780b;
+  background: #dc780b;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.menu__food__addCart:hover {
+  background: white;
+  color: #dc780b;
+  cursor: pointer;
+}
+
+.menu__food__ratings {
+  margin-left: 120px;
+}
+
+.menu__btn {
+  margin-top: 50px;
+  margin-left: 501px;
+}
