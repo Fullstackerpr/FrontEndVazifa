@@ -1,0 +1,27 @@
+.hero {
+  .hero__context {
+    margin-top: 184px;
+    color: #fff;
+    text-align: center;
+    h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+    p {
+        font-size: 17px;
+        line-height: 20px;
+        padding-top: 7px;
+    }
+    button {
+        width: 167px;
+        height: 44px;
+        border-radius: 3px;
+        font-size: 13px;
+        line-height: 20px;
+        background-color: #DD783F;
+        border: none;
+        color: #fff;
+        margin-top: 35px;
+    }
+  }
+}

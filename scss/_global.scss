@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+.main__hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.main__hero {
+  background: url(../assets/desertt.jpg) no-repeat center/cover;
+  height: 500px;
+  background-size: contain; 
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} 
