@@ -1,0 +1,100 @@
+.products {
+  margin-top: 135px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .product__head {
+    width: 100%;
+    height: 61px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 100%;
+      color: #3858d6;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 100%;
+      padding-top: 5px;
+    }
+  }
+  .product__smart {
+    margin-top: 65px;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 65px 50px;
+    grid-template-columns: repeat(3, 1fr);
+    .product__card {
+      width: 335px;
+      height: 440px;
+      background-color: #f6f6f6;
+      .product__card__img {
+        display: flex;
+        position: relative;
+        img {
+          width: 250px;
+          height: 280px;
+          margin-top: 29px;
+          margin-left: 41px;
+        }
+        .product1__icon {
+          left: 235px;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          img {
+            margin-top: 10px;
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .product__card__body {
+        text-align: center;
+        padding-top: 39px;
+        h3 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 100%;
+        }
+        .product__card__starts {
+          margin-top: 10px;
+        }
+        .product__card__text {
+          display: flex;
+          justify-content: center;
+          margin-top: 8px;
+          span {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 121%;
+            color: #8b8e99;
+            text-decoration: line-through;
+            padding-top: 2px;
+          }
+          p {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 121%;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  button {
+    width: 196px;
+    height: 46px;
+    margin-top: 78px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    background-color: #3858d6;
+  }
+}

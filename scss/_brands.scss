@@ -1,0 +1,109 @@
+.brands {
+  width: 1102px;
+  height: 239px;
+  margin-top: 73px;
+  display: flex;
+  justify-content: space-between;
+  .brand__apple {
+    width: 354px;
+    height: 239px;
+    border-radius: 22px;
+    background-color: #f6f6f6;
+    display: flex;
+
+    .brand__apple__img {
+      img {
+        width: 85px;
+        height: 148px;
+        margin-top: 46px;
+        margin-left: 41px;
+      }
+    }
+    .brand__apple__text {
+      margin-top: 57px;
+      margin-left: 26px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        padding-top: 9px;
+        color: #8b8e99;
+      }
+    }
+  }
+  .brand__xiaomi {
+    width: 354px;
+    height: 239px;
+    border-radius: 22px;
+    background-color: #f6f6f6;
+    display: flex;
+    .brand__xiaomi__img {
+      img {
+        width: 86px;
+        height: 150px;
+        margin-top: 46px;
+        margin-left: 40px;
+        object-fit: cover;
+      }
+    }
+    .brand__xiaomi__text {
+      margin-top: 57px;
+      margin-left: 26px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        padding-top: 9px;
+        color: #8b8e99;
+      }
+    }
+  }
+  .brand__fitbit {
+    width: 354px;
+    height: 239px;
+    border-radius: 22px;
+    background-color: #f6f6f6;
+    display: flex;
+
+    .brand__fitbit__img {
+      img {
+        width: 91px;
+        height: 150px;
+        margin-top: 46px;
+        margin-left: 39px;
+      }
+    }
+    .brand__fitbit__text {
+      margin-top: 57px;
+      margin-left: 26px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 100%;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 120%;
+        padding-top: 9px;
+        color: #8b8e99;
+      }
+    }
+  }
+}

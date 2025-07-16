@@ -1,0 +1,58 @@
+.newsletter {
+  height: 377px;
+  border-radius: 22px;
+  margin-top: 135px;
+  background-color: #f6f6f6;
+  .newslet {
+    display: flex;
+    justify-content: space-evenly;
+    .newslet__body {
+      width: 547px;
+      margin-top: 107px;
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 100%;
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        padding-top: 12px;
+        color: #8b8e99;
+      }
+      .newslet__mail {
+        display: flex;
+        input {
+          width: 443px;
+          height: 60px;
+          border-radius: 15px;
+          border: none;
+          font-size: 16px;
+          line-height: 125%;
+          padding-left: 56px;
+          color: #646568b2;
+          margin-top: 12px;
+        }
+        button {
+          width: 112px;
+          height: 55px;
+          font-size: 18px;
+          line-height: 125%;
+          font-weight: 600;
+          color: #fff;
+          border-radius: 9px;
+          border: none;
+          margin-top: 15px;
+          background-color: #3858d6;
+        }
+      }
+    }
+    .newslet__img {
+      margin-top: 33px;
+      img {
+        width: 272px;
+        height: 301px;
+      }
+    }
+  }
+}
