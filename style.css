@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url("./assets/winter.jpg") no-repeat center center/cover;
+  margin: 30px;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 600px;
+  padding-left: 130px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.wrapper h1 {
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.inp label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.inp input {
+  width: 70%;
+  border-radius: 15px;
+  padding: 17px;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 15px;
+  background-color: rgb(223, 228, 251);
+}
+
+button {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px 315px;
+  color: #fff;
+  background-color: blue;
+  transition: 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: aqua;
+}
+
+
+
+.table {
+  overflow-x: auto;
+  margin-left: 850px;
+  margin-top: -570px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #6c63ff;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.table tr:hover {
+  background: #f1f1f1;
+}
