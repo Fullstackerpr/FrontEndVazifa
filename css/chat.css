@@ -43,6 +43,11 @@
     flex: 1;
     /* height: calc(100% - 100px); */
     padding: 12px;
+    overflow-y: auto;
+}
+
+.content::-webkit-scrollbar{
+    width: 0;
 }
 .msg{
     width: 200px;
