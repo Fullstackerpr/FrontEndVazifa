@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        .main{
+            border: 1px solid red;
+        }
+        .sidebar{
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100vh;
+            background: pink;
+            transition: .5s;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Web storage</h1>
+      <h2>Events</h2>
+      <button>click</button>
+    </main>
+
+    <input type="text" class="inp">
+
+
+    <div class="sidebar"></div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
