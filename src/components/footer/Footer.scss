@@ -1,0 +1,111 @@
+.footer {
+    height: 508px;
+  padding-top: 100px;
+  background-color: #08101d;
+  .footer__wrapper {
+    display: flex;
+    gap: 31px;
+    color: #777b83;
+    .footer__contact {
+      width: 261px;
+      img {
+        width: 260px;
+        margin-bottom: 25px;
+      }
+      p {
+        // padding-top: 20px;
+        font-weight: 450;
+        font-size: 14px;
+        line-height: 120%;
+      }
+      a {
+        display: inline-block; 
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    .footer__info {
+      width: 165px;
+      h4 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+      }
+      .p1 {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 32px;
+      }
+      p {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 20px;
+      }
+    }
+    .footer__menu {
+      width: 165px;
+      h4 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+      }
+      .p1 {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 32px;
+      }
+      p {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 20px;
+      }
+    }
+    .footer__link {
+      width: 165px;
+      h4 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+      }
+      .p1 {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 32px;
+      }
+      p {
+        font-weight: 450;
+        font-size: 14px;
+        padding-top: 20px;
+      }
+    }
+    .footer__store {
+      width: 261px;
+      h4 {
+        font-weight: 500;
+        font-size: 15px;
+        color: #fff;
+      }
+      p {
+        padding-top: 25px;
+        padding-bottom: 29px;
+        font-weight: 450;
+        font-size: 14px;
+        line-height: 120%;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer__icons {
+        margin-top: 21px;
+        margin-bottom: 42px;
+        font-size: 20px;
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+}

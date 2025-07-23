@@ -1,0 +1,41 @@
+.about {
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-color: #070d17;
+  .about__wrapper {
+    height: 551px;
+    display: flex;
+    .about__body {
+      width: 548px;
+      transform: translateX(70px);
+      h1 {
+        width: 548px;
+        padding-top: 20px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 130%;
+        color: #fff;
+      }
+      .p1 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        padding-top: 40px;
+        color: #c3c1c1;
+      }
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        padding-top: 20px;
+        color: #c3c1c1;
+      }
+    }
+    .about__img {
+      img {
+        width: 642px;
+        height: 551px;
+      }
+    }
+  }
+}
