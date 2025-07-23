@@ -1,0 +1,41 @@
+.header {
+  background-color: #0a111f;
+  .wrapper {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo {
+      width: 284px;
+      height: 57px;
+    }
+    .header__collection {
+      width: 411px;
+      height: 22px;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        a {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 100%;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    .header__button {
+      button {
+        padding: 15px 30px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        background-color: #3a68b8;
+      }
+    }
+  }
+}
