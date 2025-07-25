@@ -1,13 +1,11 @@
-import Input from './components/Input';
-import SignIn from './components/SignIn'
+import SignupForm from "./components/SignupForm"; 
 
 function App() {
   return (
     <>
-      <Input/>
-      <SignIn/>
+      <SignupForm />
     </>
-  )
+  );
 }
 
 export default App;
