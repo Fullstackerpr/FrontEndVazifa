@@ -1,6 +1,6 @@
 import React from "react";
 
-const Popup = ({ children, onclose, isShow = false }) => {
+const Popup = ({ children = false }) => {
   return (
     isShow && (
       <>

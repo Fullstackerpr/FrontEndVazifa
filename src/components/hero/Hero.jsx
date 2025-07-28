@@ -2,57 +2,40 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Popup from "../ui/Popup";
 import ErrorWid from "../ui/ErrorWid";
-import Skeleton from '../ui/Skeleton'
+import Skeleton from "../ui/Skeleton";
 
 const Hero = () => {
-  //   const [show, setShow] = useState(true);
-
-  const [show, setShow] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null)
-
-  const handleShow = (product) => {
-    setSelectedProduct(product);
-    setShow(true);
-  };
-
-  const handleClose = () => {
-    setShow(false);
-    setSelectedProduct(null);
-  };
-
+  const [error, setError] = useState(null);
   const [data, setData] = useState([]);
 
   useEffect(() => {
-
-    setLoading(true)
+    setLoading(true);
 
     axios
       .get("https://fakestoreapi.com/products")
       .then((res) => {
         setData(res.data);
-        setLoading(false)
+        setLoading(false);
       })
       .catch((err) => {
-        setError(err)
-        setLoading(false)
+        setError(err);
+        setLoading(false);
       });
   }, []);
 
-
   if (loading) return <Skeleton count={12} />;
-
 
   return (
     <>
-    {error && <ErrorWid/>}
+      {error && <ErrorWid />}
 
       <div className="container mx-auto grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-10 mt-[80px]">
         {data.map((product) => (
           <div
-            onClick={() => handleShow(product)}
-            className="shadow-lg rounded-lg overflow-hidden"
+            onClick={() => setSelectedProduct(product)}
+            className="shadow-lg rounded-lg overflow-hidden cursor-pointer"
             key={product.id}
           >
             <div>
@@ -74,8 +57,8 @@ const Hero = () => {
         ))}
       </div>
 
-      <Popup isShow={show} onclose={handleClose}>
-        {selectedProduct && (
+      {selectedProduct && (
+        <Popup isShow={true} onclose={() => setSelectedProduct(null)}>
           <div className="bg-white p-6 rounded-lg max-w-[500px]">
             <img
               src={selectedProduct.image}
@@ -85,16 +68,18 @@ const Hero = () => {
             <h2 className="text-xl font-bold">{selectedProduct.title}</h2>
             <p className="text-sm mt-2">{selectedProduct.description}</p>
             <p className="mt-2 text-lg font-bold">${selectedProduct.price}</p>
-            <p className="font-bold pt-[10px] text-amber-500">⭐ {selectedProduct.rating.rate}</p>
+            <p className="font-bold pt-[10px] text-amber-500">
+              ⭐ {selectedProduct.rating.rate}
+            </p>
             <button
-              onClick={handleClose}
+              onClick={() => setSelectedProduct(null)}
               className="mt-4 px-4 py-2 bg-red-500 text-white rounded"
             >
               Yopish
             </button>
           </div>
-        )}
-      </Popup>
+        </Popup>
+      )}
     </>
   );
 };
