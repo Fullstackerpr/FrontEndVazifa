@@ -1,9 +1,9 @@
 import React from "react";
 
-const Skeleton = ({count = 12}) => {
+const Skeleton = () => {
   return (
     <div className="container mx-auto grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4">
-      {Array(count)
+      {Array(12)
         .fill()
         ?.map((_, index) => (
           <div key={index}>

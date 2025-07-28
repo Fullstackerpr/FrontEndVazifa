@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Popup from "../ui/Popup";
 import ErrorWid from "../ui/ErrorWid";
 import Skeleton from "../ui/Skeleton";
@@ -9,6 +9,8 @@ const Hero = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [data, setData] = useState([]);
+
+
 
   useEffect(() => {
     setLoading(true);
@@ -31,11 +33,11 @@ const Hero = () => {
     <>
       {error && <ErrorWid />}
 
-      <div className="container mx-auto grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-10 mt-[80px]">
+      <div className="container mx-auto grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-10 mt-[80px] cursor-pointer">
         {data.map((product) => (
           <div
             onClick={() => setSelectedProduct(product)}
-            className="shadow-lg rounded-lg overflow-hidden cursor-pointer"
+            className="shadow-lg rounded-lg overflow-hidden"
             key={product.id}
           >
             <div>
@@ -59,7 +61,7 @@ const Hero = () => {
 
       {selectedProduct && (
         <Popup isShow={true} onclose={() => setSelectedProduct(null)}>
-          <div className="bg-white p-6 rounded-lg max-w-[500px]">
+          <div className="bg-white p-6 rounded-lg max-w-[500px] cursor-pointer">
             <img
               src={selectedProduct.image}
               alt={selectedProduct.title}
