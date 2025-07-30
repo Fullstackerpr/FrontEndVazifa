@@ -1,9 +1,14 @@
 import { FaEye } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import bg from "../../assets/bg.jpg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+
+  const navigate = useNavigate()
+
+  const inc = () => { }
+
   return (
     <>
       <div
