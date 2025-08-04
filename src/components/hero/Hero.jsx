@@ -11,7 +11,7 @@ export default class Hero extends Component {
   }
 
   componentDidMount() {
-    fetch("http://dummyjson.com/recipes")
+    fetch("https://dummyjson.com/recipes")
       .then((res) => res.json())
       .then((data) => this.setState({ data }))
       .catch((error) => this.setState({ error }))
