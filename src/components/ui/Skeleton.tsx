@@ -5,7 +5,7 @@ interface SkeletonProps {
 }
 
 
-const Skeleton: React.FC<SkeletonProps> = ({ count = 12 }) => {
+const Skeleton: React.FC<SkeletonProps> = () => {
   return (
     <div className="container mx-auto grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 gap-4">
       {Array(12)?.map((_, index) => (
