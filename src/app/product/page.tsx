@@ -1,14 +1,5 @@
 import { memo } from "react";
-import Image from "next/image";
 
-type ProductType = {
-  id: number;
-  title: string;
-  thumbnail: string;
-  price: number;
-  rating: number;
-  tags?: string;
-};
 
 const Product = async () => {
   const res = await fetch("https://dummyjson.com/products");
@@ -16,12 +7,12 @@ const Product = async () => {
 
   return (
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      {data.products.map((item: ProductType) => (
+      {data.products.map((item: any) => (
         <div
           key={item.id}
           className="overflow-hidden rounded-3xl shadow-2xl hover:scale-105 transform transition duration-300 cursor-pointer bg-white"
         >
-          <Image
+          <img
             src={item.thumbnail}
             alt={item.title}
             width={400}

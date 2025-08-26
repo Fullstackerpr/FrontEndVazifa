@@ -1,18 +1,4 @@
-"use client";
-
 import { memo } from "react";
-import Image from "next/image";
-
-type UserType = {
-  id: number;
-  firstName: string;
-  lastName: string;
-  gender: string;
-  phone: string;
-  age: number;
-  height: number;
-  image: string;
-};
 
 const User = async () => {
   const res = await fetch("https://dummyjson.com/users");
@@ -20,12 +6,12 @@ const User = async () => {
 
   return (
     <div className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      {data.users.map((item: UserType) => (
+      {data.users.map((item: any) => (
         <div
           key={item.id}
           className="overflow-hidden rounded-3xl shadow-2xl hover:scale-105 transform transition duration-300 cursor-pointer bg-white"
         >
-          <Image
+          <img
             src={item.image}
             alt={`${item.firstName} ${item.lastName}`}
             width={400}
