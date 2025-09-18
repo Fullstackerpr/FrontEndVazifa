@@ -1,9 +1,9 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query"
+import { useMutation } from "@tanstack/react-query"
 import { api } from "../../../shared/api"
 
 
 export const useAuth = () => {
-    const client = useQueryClient()
+    // const client = useQueryClient()
 
     const signIn = useMutation<any, any, {phone: string}> ({
         mutationFn: (body) => api.post('doctor/login', body).then(res => res.data)
