@@ -1,8 +1,11 @@
 import { memo } from "react";
 import { useUser } from "../lib/useUser";
+import { Pencil, Trash2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const View = () => {
-  const { users } = useUser();
+  const { users, removeUser } = useUser();
+  const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
@@ -15,12 +18,26 @@ const View = () => {
           {users.map((item: any) => (
             <div
               key={item.id}
-              className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-lg"
+              className="flex justify-between rounded-xl bg-white p-6 shadow-md transition hover:shadow-lg"
             >
-              <h1 className="text-lg font-semibold text-gray-800">
-                {item.username}
-              </h1>
-              <p className="mt-2 text-sm text-gray-600">{item.password}</p>
+              <div>
+                <h1 className="text-lg font-semibold text-gray-800">
+                  {item.username}
+                </h1>
+                <p className="mt-2 text-sm text-gray-600">{item.password}</p>
+              </div>
+              <div className="flex flex-col">
+                <button onClick={() => navigate("/", {state: {id: item.id}})}>
+                  <Pencil
+                    size={20}
+                    color="yellow"
+                    className="mb-2 cursor-pointer"
+                  />
+                </button>
+                <button onClick={() => removeUser(item.id)}>
+                  <Trash2 size={20} color="red" className="cursor-pointer" />
+                </button>
+              </div>
             </div>
           ))}
         </div>
