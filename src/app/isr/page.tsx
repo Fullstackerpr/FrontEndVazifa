@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { memo } from "react";
 
 type Product = {
@@ -9,9 +10,12 @@ type Product = {
 };
 
 const IsrPage = async () => {
-  const res = await fetch("https://68ce8be66dc3f350777f4fb1.mockapi.io/products", {
-    next: { revalidate: 60 },
-  });
+  const res = await fetch(
+    "https://68ce8be66dc3f350777f4fb1.mockapi.io/products",
+    {
+      next: { revalidate: 60 },
+    }
+  );
 
   const data = await res.json();
 
@@ -25,11 +29,13 @@ const IsrPage = async () => {
             key={item.id}
             className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
           >
-            <img
-              src={item.img}
-              alt={item.name}
-              className="h-40 w-full object-cover"
-            />
+            <Link href={`/isr/${item.id}`}>
+              <img
+                src={item.img}
+                alt={item.name}
+                className="h-40 w-full object-cover"
+              />
+            </Link>
             <div className="p-4">
               <h2 className="font-semibold text-lg">{item.name}</h2>
               <p className="text-gray-500">{item.state}</p>

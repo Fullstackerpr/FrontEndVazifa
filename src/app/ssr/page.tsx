@@ -1,4 +1,6 @@
+// app/ssr/page.tsx
 import { memo } from "react";
+import Link from "next/link";
 
 type Product = {
   id: string;
@@ -9,10 +11,9 @@ type Product = {
 };
 
 const SsrPage = async () => {
-  const res = await fetch(
-    "https://68ce8be66dc3f350777f4fb1.mockapi.io/users",
-    { cache: "no-store" }
-  );
+  const res = await fetch("https://68ce8be66dc3f350777f4fb1.mockapi.io/users", {
+    cache: "no-store",
+  });
 
   const data = await res.json();
 
@@ -26,11 +27,13 @@ const SsrPage = async () => {
             key={item.id}
             className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow overflow-hidden"
           >
-            <img
-              src={item.img}
-              alt={item.name}
-              className="h-40 w-full object-cover"
-            />
+            <Link href={`/ssr/${item.id}`}>
+              <img
+                src={item.img}
+                alt={item.name}
+                className="h-40 w-full object-cover cursor-pointer"
+              />
+            </Link>
             <div className="p-4">
               <h2 className="font-semibold text-lg">{item.name}</h2>
               <p className="text-gray-500">{item.state}</p>
